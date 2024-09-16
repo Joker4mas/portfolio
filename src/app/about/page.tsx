@@ -1,7 +1,6 @@
 "use client";
 
-// import Image from "next/image";
-// import SamuelPicture from "@/app/public/Snapchat-964094405.jpg";
+
 
 function page() {
   return (
