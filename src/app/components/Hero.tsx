@@ -13,7 +13,7 @@ function page() {
         I’m a software engineer, currently working remotely. I’m always looking for new opportunities to learn and grow.
       </p> 
      <div className=" text-center md:text-start">
-      <button className="p-4 bg-green-800 rounded-md text-gray-200 hover:text-white my-4"> <a href="/contact">Let's connect 😉 </a></button>
+      <button className="p-4 bg-green-800 rounded-md text-gray-200 hover:text-white my-4"> <a href="/contact">Let’s connect 😉 </a></button>
      </div>
       </div>
 
