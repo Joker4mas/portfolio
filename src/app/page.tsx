@@ -7,13 +7,10 @@ export default function Home() {
 
 
   return (
-    <div className="">
-      <main className="p-24 text-center mx-auto">
+    <div className="max-h-screen">
        <Hero />
       <Skills/>
-
-      </main>
-     
+     <footer />
     </div>
   );
 }

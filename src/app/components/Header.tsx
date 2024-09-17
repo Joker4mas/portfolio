@@ -76,7 +76,7 @@ const Header: React.FC<HeaderProps> = ({
               <a
                 key={item.label}
                 href={item.href}
-                className="text-base font-medium text-gray-400 hover:text-gray-100 "
+                className=" font-medium text-gray-400 hover:text-gray-100 text-lg"
               >
                 {item.label}
               </a>
