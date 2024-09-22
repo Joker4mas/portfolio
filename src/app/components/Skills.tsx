@@ -27,6 +27,12 @@ function Skills() {
             <h3 className="my-4 font-bold">Vue</h3>
             <Image src={VueLogo} alt="tailwindCss" width={100} height={100} />
           </div>
+         
+          <div className="flex flex-col  text-center items-center mx-auto p-4 my-4 rounded-md shadow-lg bg-base-300 ">
+            <h3 className="my-4 font-bold">Node.js</h3> 
+         <Image src={NodeLogo} alt="tailwindCss" width={100} height={100} />
+          </div>
+
           <div className="flex flex-col   text-center items-center mx-auto p-4 my-4 rounded-md shadow-lg ">
             <h3 className="my-4 font-bold">Tailwind CSS</h3>
           <div>
@@ -40,11 +46,6 @@ function Skills() {
           </div>
           </div>
 
-
-          <div className="flex flex-col  text-center items-center mx-auto p-4 my-4 rounded-md shadow-lg bg-base-300 ">
-            <h3 className="my-4 font-bold">Node.js</h3> 
-         <Image src={NodeLogo} alt="tailwindCss" width={100} height={100} />
-          </div>
           <div className="flex flex-col  text-center items-center mx-auto p-4 my-4 rounded-md shadow-lg bg-base-300">
             <h3 className="my-4 font-bold">JavaScript</h3>
             <Image src={JsLogo} alt="tailwindCss" width={100} height={100} />
