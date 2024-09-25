@@ -4,10 +4,10 @@
 
 function page() {
   return (
-    <div className="p-2">
-      <div className="text-center p-4 md:p-8 text-gray-400 min-h-screen mb-12">
+    <div className="">
+      <div className="text-center md:w-4/5 md:p-8 text-gray-400  mx-auto ">
         <h2 className="my-2 text-2xl">Hi, I’m Samuel Ogbaje! 👋</h2>
-        <p className="text-wrap leading-8">
+        <p className="text-wrap leading-8 p-12">
           I’m a passionate and ambitious frontend developer with a keen desire
           to evolve into full-stack development. My love for technology and web
           development is rooted in a deep enthusiasm for creating visually

@@ -1,6 +1,7 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 interface ProjectCardProps {
   project: {
@@ -14,17 +15,17 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <Link href={project.projectUrl} passHref target='_blank'>
-      <div className="bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
+    <Link href={project.projectUrl} passHref target="_blank">
+      <div className="bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer">
         <div className="relative h-48">
           <Image
             src={project.imageUrl}
             alt={project.title}
-            layout="fill"
-            objectFit="cover"
-
-            className='w-full h-full'
-          
+            fill
+            style={{ objectFit: "cover" }}
+            onError={(e) => {
+              e.currentTarget.src = "/placeholder-image.png";
+            }}
           />
         </div>
         <div className="p-4">

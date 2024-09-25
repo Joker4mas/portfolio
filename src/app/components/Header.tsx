@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Bold, Menu, X } from "lucide-react";
 import Image from "next/image";
+import {motion} from 'framer-motion'
 
 interface NavItem {
   label: string;
@@ -22,10 +23,14 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <header className=" shadow-md w-full">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 shadow-md border-1 border-gray-50">
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           {/* Logo */}
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <motion.div 
+          initial={{y: -100}}
+          animate={{y:0}}
+          transition={{delay: 0.3, type: 'spring', stiffness: 300}}
+          className="flex justify-start lg:w-0 lg:flex-1">
             <a href="/">
               <svg width="250" height="60" xmlns="http://www.w3.org/2000/svg">
                 <rect width="100%" height="100%" fill="" />
@@ -52,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({
                 <circle cx="100" cy="30" r="8" fill="red" />
               </svg>
             </a>
-          </div>
+          </motion.div>
 
           {/* Mobile menu button */}
           <div className="-mr-2 -my-2 md:hidden bg-black">
@@ -71,17 +76,24 @@ const Header: React.FC<HeaderProps> = ({
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden md:flex space-x-1 gap-8">
+          <motion.nav
+           initial={{y: -100}}
+           animate={{y:0}}
+           transition={{delay: 0.3, type: 'spring', stiffness: 300}}
+          className="hidden md:flex space-x-1 gap-8">
             {navItems.map((item) => (
-              <a
+              <motion.a
+              whileHover={{scale: 1.2,
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+              }}  
                 key={item.label}
                 href={item.href}
-                className=" font-medium text-gray-400 hover:text-gray-100 text-lg"
+                className=" font-medium text-gray-400 hover:text-gray-200 text-lg"
               >
                 {item.label}
-              </a>
+              </motion.a>
             ))}
-          </nav>
+          </motion.nav>
 
           {/* CTA button */}
           {/* <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">

@@ -7,10 +7,11 @@ export default function Home() {
 
 
   return (
-    <div className="max-h-screen">
+    <>
        <Hero />
-      <Skills/>
-     <footer />
-    </div>
+
+      <Skills />
+  
+    </>
   );
 }

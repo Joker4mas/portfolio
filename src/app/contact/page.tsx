@@ -37,8 +37,8 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
+    <div className="max-w-md mx-auto mb-4">
+      <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div>
           <label htmlFor="name" className="block mb-1">Name</label>
