@@ -13,6 +13,8 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+
   {
     id: '1',
     title: 'MedFinder',
@@ -31,14 +33,14 @@ const projects: Project[] = [
     id: '3',
     title: 'Rating  App',
     description: 'Rate component built on HTML5, Css3 and Javascript.',
-    imageUrl: '/rating.png/',
+    imageUrl: '/https://i.imgur.com/8tA9gZ3/',
     projectUrl: 'https://interactive-component-fe-menters.vercel.app/',
   },
   {
     id: '4',
     title: 'Ludo game',
     description: 'Pig game built with HTML5, Css3 and Javascript.',
-    imageUrl: '/sunnyside_ejmdyq.png/',
+    imageUrl: '/https://i.imgur.com/cuLXLZr.jpg/',
     projectUrl: 'https://ludo-joker4mas.netlify.app/',
   },
   // Add more projects as needed
@@ -46,7 +48,7 @@ const projects: Project[] = [
 
 const ProjectsPage: React.FC = () => {
   return (
-    <div className="max-h-screen  bg-gray-950 mb-12">
+    <div className=" bg-gray-950">
     
 
       <main className="container mx-auto p-12 mb-36">

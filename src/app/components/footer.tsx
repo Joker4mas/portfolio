@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div>
-      <footer className="flex flex-col items-center md:mx-24 md:p-8 gap-8 ">
+      <footer className="flex flex-col items-center md:mx-24 md:p-8 ">
         <div className="flex flex-col md:flex-row gap-8 items-center w-full justify-between">
           <nav className="flex flex-col  items-center gap-4 mt-4">
             <motion.a 
