@@ -1,8 +1,8 @@
 "use client";
-
+import Link from "next/link";
 import Image from "next/image";
 import SamuelPicture from "@/app/public/samuelx.png";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 // import { FaReact } from "react-icons/fa";
 function page() {
   return (
@@ -17,20 +17,21 @@ function page() {
           looking for new opportunities to learn and grow.
         </p>
         <div className=" text-center md:text-start">
-          <motion.button 
-          initial={{x: "-100vw"}}
-          animate={{x:0}}
-          transition={{type: 'spring', delay: 0.5 }}
-          className="p-4 bg-green-800 rounded-md text-gray-200 hover:text-white my-4">
-  
-            <a href="/contact">Let’s connect 😉 </a>
+          <motion.button
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            whileHover={{ scale: 1.3, originX: 0, color: "#f01e20" }}
+            // transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", delay: 0.5 }}
+            className="p-4 bg-green-800 rounded-md text-gray-200 hover:text-white my-4"
+          >
+            <Link href="/contact">Let’s connect 😉 </Link>
           </motion.button>
         </div>
       </div>
 
       <div className=" py-4 mx-auto  items-center md:mx-0 md:ml-24">
-        <motion.div 
-        className="relative w-80 h-80  rounded-full bg-gradient-to-b from-teal-600 overflow-hidden text-center items-center md:ml-40 ">
+        <motion.div className="relative w-80 h-80  rounded-full bg-gradient-to-b from-teal-600 overflow-hidden text-center items-center md:ml-40 ">
           <Image
             src={SamuelPicture}
             alt="Samuel's Snapchat profile picture"
