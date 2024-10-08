@@ -1,5 +1,5 @@
 "use client";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 import {
   FaFilePdf,
   FaLinkedin,
@@ -10,79 +10,93 @@ import {
   FaEnvelopeCircleCheck,
 } from "react-icons/fa6";
 
-const Footer = () => {
+function Footer() {
   return (
     <div>
       <footer className="flex flex-col items-center md:mx-24 md:p-8 ">
         <div className="flex flex-col md:flex-row gap-8 items-center w-full justify-between">
           <nav className="flex flex-col  items-center gap-4 mt-4">
-            <motion.a 
-            whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-            transition={{type: 'spring', stiffness: 300}}
-            href="/" className="flex items-center gap-2">
+            <motion.a
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              href="/"
+              className="flex items-center gap-2"
+            >
               Home
             </motion.a>
-            <motion.a 
-            whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-            transition={{type: 'spring', stiffness: 300}}
-            href="/about" className="flex items-center gap-2">
+            <motion.a
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              href="/about"
+              className="flex items-center gap-2"
+            >
               About
             </motion.a>
-            <motion.a 
-            whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-            transition={{type: 'spring', stiffness: 300}}
-            href="/contact" className="flex items-center gap-2">
+            <motion.a
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              href="/contact"
+              className="flex items-center gap-2"
+            >
               Contact{" "}
             </motion.a>
-            <motion.a 
-            whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-            transition={{type: 'spring', stiffness: 300}}
-            href="/resume" className="flex items-center gap-2">
+            <motion.a
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              href="/resume"
+              className="flex items-center gap-2"
+            >
               Resume <FaFilePdf />
             </motion.a>
           </nav>
 
           <div className="flex flex-col gap-4">
             <motion.span
-              whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-              transition={{type: 'spring', stiffness: 300}}
-            className="flex items-center gap-2 cursor-pointer">
-              <FaSquarePhone size='32' />
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <FaSquarePhone size="32" />
               <p>+2348069822444</p>
             </motion.span>
             <motion.span
-              whileHover={{scale: 1.3, originX: 0, color: "#f8e112"}} 
-              transition={{type: 'spring', stiffness: 300}}
-            className="flex items-center gap-2 cursor-pointer">
-              <FaEnvelopeCircleCheck size='32' 
-              /> samuelogbaje@gmail.com
+              whileHover={{ scale: 1.3, originX: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <FaEnvelopeCircleCheck size="32" /> samuelogbaje@gmail.com
             </motion.span>
           </div>
 
           <div className="socials flex gap-8 md:flex-row">
-            <motion.a 
-            whileHover={{scale: 1.5, originY: 0, color: '#f8e112'}}
-            transition={{type: 'spring'}}
-            href="">
-              <FaLinkedin size='32'/>
+            <motion.a
+              whileHover={{ scale: 1.5, originY: 0, color: "#f8e112" }}
+              transition={{ type: "spring" }}
+              href=""
+            >
+              <FaLinkedin size="32" />
             </motion.a>
             <motion.a
-            whileHover={{scale: 1.5, originY: 0, color: '#f8e112'}}
-            transition={{type: 'spring'}}
-            href="https://github.com/Joker4mas">
-              <FaSquareGithub size='32'/>
+              whileHover={{ scale: 1.5, originY: 0, color: "#f8e112" }}
+              transition={{ type: "spring" }}
+              href="https://github.com/Joker4mas"
+            >
+              <FaSquareGithub size="32" />
             </motion.a>
             <motion.a
-            whileHover={{scale: 1.5, originY: 0, color: '#f8e112'}}
-            transition={{type: 'spring'}}
-            href="">
-              <FaTwitter size='32'/>
+              whileHover={{ scale: 1.5, originY: 0, color: "#f8e112" }}
+              transition={{ type: "spring" }}
+              href=""
+            >
+              <FaTwitter size="32" />
             </motion.a>
             <motion.a
-            whileHover={{scale: 1.5, originY: 0, color: '#f8e112'}}
-            transition={{type: 'spring', stiffness: 300}}
-            href="/" className="h-32">
-              <FaSquareUpwork size='32' />
+              whileHover={{ scale: 1.5, originY: 0, color: "#f8e112" }}
+              transition={{ type: "spring", stiffness: 300 }}
+              href="/"
+              className="h-32"
+            >
+              <FaSquareUpwork size="32" />
             </motion.a>
           </div>
         </div>
@@ -94,6 +108,6 @@ const Footer = () => {
       </footer>
     </div>
   );
-};
+}
 
 export default Footer;
