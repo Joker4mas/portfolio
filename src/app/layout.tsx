@@ -13,12 +13,12 @@ export const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-export const nunito_san_init = Nunito_Sans({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-nunito_sans",
-  weight: "300",
-});
+// export const nunito_san_init = Nunito_Sans({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-nunito_sans",
+//   weight: "300",
+// });
 
 export const metadata: Metadata = {
   title: "Samuel's Portfolio",
