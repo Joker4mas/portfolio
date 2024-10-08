@@ -44,7 +44,7 @@ export default function RootLayout({
       <body className={`${poppins.variable} antialiased`}>
         <Header logo={logoUrl} navItems={navItems} />
         {children}
-        <Footer navItems={navItems} />
+        <Footer />
       </body>
     </html>
   );
