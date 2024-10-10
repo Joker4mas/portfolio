@@ -24,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             fill
             style={{ objectFit: "cover" }}
             onError={(e) => {
-              e.currentTarget.src = "/placeholder-image.png";
+              e.currentTarget.src = "https://i.imgur.com/";
             }}
           />
         </div>

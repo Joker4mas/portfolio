@@ -1,8 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: [ 'imgur.com' ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'imgur.com',
+        port: '',
+        pathname: '/codzschach/all/**',
       },
+    ],
+  },
     
 };
 
