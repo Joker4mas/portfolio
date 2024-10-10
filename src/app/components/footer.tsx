@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   FaFilePdf,
@@ -10,7 +11,7 @@ import {
   FaEnvelopeCircleCheck,
 } from "react-icons/fa6";
 
-const footer = () => {
+const Footer: React.FC = () => {
   return (
     <div>
       <footer className="flex flex-col items-center md:mx-24 md:p-8 ">
@@ -114,7 +115,7 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
 // const export default Footer () {
 //   return (
 //     <div>

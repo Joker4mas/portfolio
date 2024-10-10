@@ -14,23 +14,23 @@ interface Project {
 
 // Use the Project interface in the component props
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
-  <div className="project-card">
-    <h3 className="my-4">{project.title}</h3>
-    <h4 className="my-2">{project.stack}</h4>
+  <div className="project-card bg-gray-800 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer p-8">
     <img
       //   initial={{ opacity: 0 }}
       //   animate={{ opacity: 1 }}
       //   transition={{ duration: 0.8 }}
       src={project.imageUrl}
       alt={project.title}
-      style={{ maxWidth: "40%", height: "40%" }}
+      style={{ maxWidth: "100%", height: "auto" }}
       onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
         const target = e.target as HTMLImageElement;
         target.onerror = null;
         target.src = "https://i.imgur.com/";
       }}
     />
-    <p className="my-4">{project.description}</p>
+    <h3 className="text-xl font-semibold my-2">{project.title}</h3>
+    <h4 className="my-2">{project.stack}</h4>
+    <p className="my-2">{project.description}</p>
     <motion.a
       whileHover={{ scale: 0.3 }}
       href={project.projectUrl}
@@ -92,7 +92,7 @@ const ProjectsComponent: React.FC = () => {
   }, []);
 
   return (
-    <div className="projects-container grid grid-cols-1 md:grid-cols-4">
+    <div className="projects-container grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
       ))}
